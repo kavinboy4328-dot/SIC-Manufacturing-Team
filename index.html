@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SIC Manufacturing Team</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            color: #1f2937;
+        }
+
+        header {
+            background: linear-gradient(135deg, #0f172a, #1e3a8a);
+            color: white;
+            text-align: center;
+            padding: 70px 20px;
+        }
+
+        header h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        header p {
+            font-size: 20px;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: #111827;
+            padding: 16px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #60a5fa;
+        }
+
+        section {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 45px 25px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 30px;
+            margin-bottom: 25px;
+            color: #1e3a8a;
+        }
+
+        .hero-button {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 13px 25px;
+            background: white;
+            color: #1e3a8a;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin-top: 25px;
+        }
+
+        .card {
+            padding: 25px;
+            background: #f8fafc;
+            border-radius: 12px;
+            text-align: center;
+            border: 1px solid #e5e7eb;
+        }
+
+        .card h3 {
+            margin-bottom: 12px;
+            color: #1e40af;
+        }
+
+        .team-card {
+            padding: 25px;
+            text-align: center;
+            background: #eef4ff;
+            border-radius: 12px;
+        }
+
+        .team-card .photo {
+            width: 90px;
+            height: 90px;
+            margin: auto;
+            border-radius: 50%;
+            background: #cbd5e1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 35px;
+            margin-bottom: 15px;
+        }
+
+        .visit {
+            border-left: 5px solid #2563eb;
+            padding: 20px;
+            margin: 20px 0;
+            background: #f8fafc;
+            border-radius: 8px;
+        }
+
+        footer {
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 30px 15px;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 700px) {
+            header h1 {
+                font-size: 30px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 7px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HOME -->
+    <header id="home">
+        <h1>SIC – Manufacturing Team</h1>
+        <p>Student Innovation Club | Manufacturing Division</p>
+        <p>Learn • Innovate • Manufacture</p>
+
+        <a href="#about" class="hero-button">Explore Our Team</a>
+    </header>
+
+
+    <!-- NAVIGATION -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#team">Team</a>
+        <a href="#visits">Industry Visits</a>
+        <a href="#technologies">Technologies</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+
+    <!-- ABOUT -->
+    <section id="about">
+        <h2>About SIC Manufacturing Team</h2>
+
+        <p>
+            The SIC Manufacturing Team is a student-driven team focused on
+            manufacturing technologies, industrial learning, innovation and
+            practical engineering applications.
+        </p>
+
+        <br>
+
+        <p>
+            Our goal is to connect classroom knowledge with real-world
+            manufacturing industries through industry visits, technical
+            activities, projects and innovation.
+        </p>
+    </section>
+
+
+    <!-- TEAM -->
+    <section id="team">
+        <h2>Our Team</h2>
+
+        <div class="cards">
+
+            <div class="team-card">
+                <div class="photo">👤</div>
+                <h3>Team Member 1</h3>
+                <p>Team Lead</p>
+            </div>
+
+            <div class="team-card">
+                <div class="photo">👤</div>
+                <h3>Team Member 2</h3>
+                <p>Manufacturing Team</p>
+            </div>
+
+            <div class="team-card">
+                <div class="photo">👤</div>
+                <h3>Team Member 3</h3>
+                <p>Manufacturing Team</p>
+            </div>
+
+            <div class="team-card">
+                <div class="photo">👤</div>
+                <h3>Team Member 4</h3>
+                <p>Manufacturing Team</p>
+            </div>
+
+            <div class="team-card">
+                <div class="photo">👤</div>
+                <h3>Team Member 5</h3>
+                <p>Manufacturing Team</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- INDUSTRY VISITS -->
+    <section id="visits">
+        <h2>Industry Visits</h2>
+
+        <div class="visit">
+            <h3>🏭 Industry Visit 01</h3>
+            <p><strong>Company:</strong> To be updated</p>
+            <p><strong>Location:</strong> Coimbatore</p>
+            <p><strong>Date:</strong> To be updated</p>
+            <p><strong>Manufacturing Processes:</strong> To be updated</p>
+        </div>
+
+        <div class="visit">
+            <h3>🏭 Industry Visit 02</h3>
+            <p><strong>Company:</strong> To be updated</p>
+            <p><strong>Location:</strong> Coimbatore</p>
+            <p><strong>Date:</strong> To be updated</p>
+        </div>
+    </section>
+
+
+    <!-- TECHNOLOGIES -->
+    <section id="technologies">
+        <h2>Manufacturing Technologies</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>⚙️ CNC Machining</h3>
+                <p>Computer-controlled manufacturing and precision machining.</p>
+            </div>
+
+            <div class="card">
+                <h3>🔥 Welding</h3>
+                <p>Joining of materials using different welding processes.</p>
+            </div>
+
+            <div class="card">
+                <h3>🏭 Casting</h3>
+                <p>Manufacturing components by pouring molten material into moulds.</p>
+            </div>
+
+            <div class="card">
+                <h3>🖨️ 3D Printing</h3>
+                <p>Additive manufacturing for prototypes and functional parts.</p>
+            </div>
+
+            <div class="card">
+                <h3>🔧 CAD/CAM</h3>
+                <p>Computer-aided design and manufacturing technologies.</p>
+            </div>
+
+            <div class="card">
+                <h3>🤖 Automation</h3>
+                <p>Modern automated systems used in manufacturing industries.</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- PROJECTS -->
+    <section id="projects">
+        <h2>Our Projects</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Project 01</h3>
+                <p>Project details will be added soon.</p>
+            </div>
+
+            <div class="card">
+                <h3>Project 02</h3>
+                <p>Project details will be added soon.</p>
+            </div>
+
+            <div class="card">
+                <h3>Innovation Ideas</h3>
+                <p>Student innovation and manufacturing ideas.</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <h2>Contact</h2>
+
+        <p><strong>Club:</strong> Student Innovation Club (SIC)</p>
+        <p><strong>Team:</strong> Manufacturing Team</p>
+        <p><strong>Department:</strong> Mechanical Engineering</p>
+        <p><strong>Location:</strong> Coimbatore, Tamil Nadu</p>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 SIC Manufacturing Team</p>
+        <p>Student Innovation Club</p>
+    </footer>
+
+</body>
+</html>
