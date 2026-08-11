@@ -1225,4 +1225,42 @@ function openProject(project){
         <h3>Objective</h3>
 
         <p>
-        To study
+        To study moulding, gating, risering,
+        solidification and casting defects
+        and identify possible improvements.
+        </p>
+        `;
+
+    }
+
+
+    box.innerHTML = content + `
+        <button class="close-button" onclick="closeBox('projectBox')">
+        Close
+        </button>
+    `;
+
+    box.classList.add("active");
+
+    box.scrollIntoView({
+        behavior:"smooth",
+        block:"center"
+    });
+}
+
+
+/* ================= CLOSE ================= */
+
+function closeBox(id){
+
+    var box = document.getElementById(id);
+
+    box.classList.remove("active");
+
+    box.innerHTML="";
+}
+
+</script>
+
+</body>
+</html>
