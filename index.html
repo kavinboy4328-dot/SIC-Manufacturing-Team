@@ -4,13 +4,14 @@
 <head>
 
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>SIC Manufacturing Team | Mechanical Engineering | SRIT</title>
 
 <style>
 
-/* ================= GENERAL ================= */
+/* ================= BASIC ================= */
 
 * {
     margin: 0;
@@ -22,15 +23,17 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     background: #f4f7fb;
-    color: black;
+    color: #000000;
+    line-height: 1.6;
 }
 
-h1, h2, h3, h4, p, a, button {
-    color: black;
+button,
+a {
+    font-family: inherit;
 }
 
 
-/* ================= HOME ================= */
+/* ================= HEADER ================= */
 
 header {
 
@@ -38,8 +41,8 @@ header {
 
     background-image:
     linear-gradient(
-        rgba(255,255,255,0.55),
-        rgba(255,255,255,0.55)
+        rgba(0,0,0,0.62),
+        rgba(0,0,0,0.62)
     ),
     url("mechanical-bg.jpg");
 
@@ -49,16 +52,18 @@ header {
 
     display: flex;
     flex-direction: column;
-
     justify-content: center;
     align-items: center;
 
     text-align: center;
 
+    color: white;
+
     padding: 40px 20px;
 }
 
 header h1 {
+
     font-size: 48px;
     margin-bottom: 18px;
     text-transform: uppercase;
@@ -66,13 +71,15 @@ header h1 {
 }
 
 header h2 {
+
     font-size: 25px;
     margin-bottom: 12px;
 }
 
 header p {
+
     font-size: 19px;
-    margin: 6px;
+    margin: 5px;
 }
 
 .hero-button {
@@ -84,8 +91,7 @@ header p {
     padding: 14px 28px;
 
     background: white;
-
-    color: black;
+    color: #1e40af;
 
     text-decoration: none;
 
@@ -93,11 +99,13 @@ header p {
 
     font-weight: bold;
 
-    border: 2px solid black;
+    transition: 0.3s;
 }
 
 .hero-button:hover {
-    background: #e5e7eb;
+
+    transform: translateY(-3px);
+    background: #dbeafe;
 }
 
 
@@ -111,32 +119,33 @@ nav {
 
     z-index: 1000;
 
-    background: white;
+    background: #111827;
 
     padding: 16px;
 
     text-align: center;
-
-    border-bottom: 2px solid black;
 }
 
 nav a {
 
-    color: black;
+    color: white;
 
     text-decoration: none;
 
     margin: 0 12px;
 
     font-weight: bold;
+
+    display: inline-block;
 }
 
 nav a:hover {
-    text-decoration: underline;
+
+    color: #60a5fa;
 }
 
 
-/* ================= SECTION ================= */
+/* ================= SECTIONS ================= */
 
 section {
 
@@ -157,7 +166,7 @@ section h2 {
 
     text-align: center;
 
-    color: black;
+    color: #1e40af;
 
     font-size: 32px;
 
@@ -168,9 +177,11 @@ section h2 {
 
     text-align: center;
 
+    font-size: 17px;
+
     line-height: 1.8;
 
-    font-size: 17px;
+    color: #000000;
 }
 
 
@@ -190,20 +201,18 @@ section h2 {
 
 .stat {
 
-    background: #f1f1f1;
+    background: #eef4ff;
 
     padding: 25px;
 
     border-radius: 12px;
 
     text-align: center;
-
-    border: 1px solid #d1d5db;
 }
 
 .stat h3 {
 
-    color: black;
+    color: #1e40af;
 
     font-size: 34px;
 
@@ -233,7 +242,7 @@ section h2 {
 
     text-align: center;
 
-    border: 1px solid #d1d5db;
+    border: 1px solid #e5e7eb;
 
     transition: 0.3s;
 }
@@ -247,16 +256,16 @@ section h2 {
 
 .card h3 {
 
-    color: black;
+    color: #1e40af;
 
     margin-bottom: 12px;
 }
 
 .card p {
 
-    line-height: 1.6;
+    color: #000000;
 
-    margin-bottom: 18px;
+    margin-bottom: 15px;
 }
 
 
@@ -264,7 +273,7 @@ section h2 {
 
 .team-card {
 
-    background: #f8fafc;
+    background: #eef4ff;
 
     padding: 28px;
 
@@ -272,9 +281,9 @@ section h2 {
 
     text-align: center;
 
-    border: 1px solid #d1d5db;
-
     transition: 0.3s;
+
+    border: 1px solid #dbeafe;
 }
 
 .team-card:hover {
@@ -294,7 +303,7 @@ section h2 {
 
     border-radius: 50%;
 
-    background: #e5e7eb;
+    background: #cbd5e1;
 
     display: flex;
 
@@ -303,15 +312,20 @@ section h2 {
     align-items: center;
 
     font-size: 40px;
-
-    border: 2px solid black;
 }
 
 .team-card h3 {
 
-    color: black;
+    color: #1e40af;
 
     margin-bottom: 8px;
+}
+
+.team-card p {
+
+    color: #000000;
+
+    margin-bottom: 15px;
 }
 
 
@@ -321,13 +335,13 @@ section h2 {
 
     display: inline-block;
 
-    border: 1px solid black;
+    border: none;
 
     padding: 10px 18px;
 
-    background: white;
+    background: #1e40af;
 
-    color: black;
+    color: white;
 
     text-decoration: none;
 
@@ -337,101 +351,98 @@ section h2 {
 
     cursor: pointer;
 
-    margin-top: 10px;
+    transition: 0.3s;
 }
 
 .button:hover {
 
-    background: black;
+    background: #172554;
 
-    color: white;
+    transform: translateY(-2px);
 }
 
 
-/* ================= PROFILE ================= */
+/* ================= PROFILE / PROJECT BOX ================= */
 
-#profile-display {
+#profile-display,
+#project-display,
+#casting-display {
 
     display: none;
 
-    margin-top: 30px;
+    margin-top: 35px;
 
     padding: 35px;
 
-    background: #f1f1f1;
+    background: #f1f5f9;
 
     border-radius: 14px;
 
-    text-align: center;
+    border: 2px solid #dbeafe;
 
-    border: 2px solid black;
+    color: #000000;
+
+    text-align: left;
+
+    animation: openBox 0.3s ease;
 }
 
-#profile-display h2 {
+@keyframes openBox {
+
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#profile-display h2,
+#project-display h2,
+#casting-display h2 {
+
+    text-align: center;
+
+    color: #1e40af;
 
     margin-bottom: 20px;
-
-    color: black;
 }
 
-#profile-display p {
+#profile-display h3,
+#project-display h3,
+#casting-display h3 {
 
-    margin: 10px;
-
-    line-height: 1.6;
-
-    color: black;
-}
-
-
-/* ================= TECHNOLOGY DETAILS ================= */
-
-.technology-details {
-
-    display: none;
-
-    margin-top: 30px;
-
-    padding: 35px;
-
-    background: #f8fafc;
-
-    border: 2px solid black;
-
-    border-radius: 14px;
-
-    line-height: 1.8;
-}
-
-.technology-details h2 {
-
-    text-align: center;
-
-    margin-bottom: 25px;
-}
-
-.technology-details h3 {
+    color: #1e40af;
 
     margin-top: 20px;
 
     margin-bottom: 8px;
 }
 
-.technology-details p {
+#profile-display p,
+#project-display p,
+#casting-display p {
 
-    margin-bottom: 15px;
+    margin: 10px 0;
+
+    color: #000000;
 }
 
-.technology-details ul {
+#project-display ul,
+#casting-display ul {
 
     margin-left: 25px;
 
-    margin-bottom: 20px;
+    color: #000000;
 }
 
-.technology-details li {
+#project-display li,
+#casting-display li {
 
-    margin-bottom: 8px;
+    margin: 7px 0;
 }
 
 
@@ -443,13 +454,13 @@ section h2 {
 
     padding: 30px;
 
-    border-left: 5px solid black;
+    border-left: 5px solid #1e40af;
 
     border-radius: 10px;
 
     text-align: center;
 
-    line-height: 1.8;
+    color: #000000;
 }
 
 
@@ -457,9 +468,9 @@ section h2 {
 
 footer {
 
-    background: white;
+    background: #111827;
 
-    color: black;
+    color: white;
 
     text-align: center;
 
@@ -468,8 +479,6 @@ footer {
     margin-top: 50px;
 
     line-height: 1.8;
-
-    border-top: 2px solid black;
 }
 
 
@@ -478,25 +487,24 @@ footer {
 @media(max-width:700px) {
 
     header h1 {
-
         font-size: 32px;
     }
 
     header h2 {
-
         font-size: 20px;
     }
 
     header p {
-
         font-size: 16px;
     }
 
     nav a {
-
-        display: inline-block;
-
         margin: 7px;
+    }
+
+    section {
+        margin: 25px 12px;
+        padding: 30px 18px;
     }
 
 }
@@ -542,7 +550,7 @@ Explore Our Team
 
 <a href="#industry">Industry Visit</a>
 
-<a href="#technology">Technologies</a>
+<a href="#technology">Technology</a>
 
 <a href="#projects">Projects</a>
 
@@ -586,7 +594,6 @@ real-world manufacturing industries.
 
 </div>
 
-
 <div class="stat">
 
 <h3>0</h3>
@@ -595,15 +602,13 @@ real-world manufacturing industries.
 
 </div>
 
-
 <div class="stat">
 
-<h3>0</h3>
+<h3>5</h3>
 
 <p>Projects</p>
 
 </div>
-
 
 <div class="stat">
 
@@ -625,7 +630,9 @@ real-world manufacturing industries.
 <h2>Our Team</h2>
 
 <div class="cards">
-<!-- HOD MENTOR -->
+
+
+<!-- HOD / MENTOR -->
 
 <div class="team-card">
 
@@ -638,8 +645,8 @@ real-world manufacturing industries.
 <p>Mentor / HOD</p>
 
 <button
-onclick="showProfile('mentor')"
-class="button">
+class="button"
+onclick="showProfile('mentor')">
 
 View Profile
 
@@ -661,8 +668,8 @@ View Profile
 <p>Team Manager</p>
 
 <button
-onclick="showProfile('kavin')"
-class="button">
+class="button"
+onclick="showProfile('kavin')">
 
 View Profile
 
@@ -684,8 +691,8 @@ View Profile
 <p>Team Leader</p>
 
 <button
-onclick="showProfile('dhanwin')"
-class="button">
+class="button"
+onclick="showProfile('dhanwin')">
 
 View Profile
 
@@ -707,8 +714,8 @@ View Profile
 <p>Executive Member</p>
 
 <button
-onclick="showProfile('parathvaj')"
-class="button">
+class="button"
+onclick="showProfile('parathvaj')">
 
 View Profile
 
@@ -730,8 +737,8 @@ View Profile
 <p>Executive Member</p>
 
 <button
-onclick="showProfile('kishore')"
-class="button">
+class="button"
+onclick="showProfile('kishore')">
 
 View Profile
 
@@ -753,8 +760,8 @@ View Profile
 <p>Executive Member</p>
 
 <button
-onclick="showProfile('anbarasu')"
-class="button">
+class="button"
+onclick="showProfile('anbarasu')">
 
 View Profile
 
@@ -776,15 +783,14 @@ View Profile
 <p>Executive Member</p>
 
 <button
-onclick="showProfile('pavin')"
-class="button">
+class="button"
+onclick="showProfile('pavin')">
 
 View Profile
 
 </button>
 
 </div>
-
 
 </div>
 
@@ -826,12 +832,9 @@ To be updated
 <br>
 
 <p>
-
-Industry visit details,
-manufacturing processes,
-learning outcomes and photographs
-will be updated after the visit.
-
+Industry visit details, manufacturing processes,
+learning outcomes and photographs will be updated
+after the visit.
 </p>
 
 </div>
@@ -839,11 +842,11 @@ will be updated after the visit.
 </section>
 
 
-<!-- ================= TECHNOLOGIES ================= -->
+<!-- ================= MANUFACTURING TECHNOLOGY ================= -->
 
 <section id="technology">
 
-<h2>Manufacturing Technologies</h2>
+<h2>Manufacturing Technology</h2>
 
 <div class="cards">
 
@@ -855,13 +858,13 @@ will be updated after the visit.
 <h3>Metal Casting</h3>
 
 <p>
-Casting processes, moulding, patterns,
-gating systems and casting defects.
+Casting processes, moulds, cores,
+gating systems, risers and casting defects.
 </p>
 
 <button
-onclick="showTechnology('casting')"
-class="button">
+class="button"
+onclick="showCasting()">
 
 View Details
 
@@ -869,215 +872,195 @@ View Details
 
 </div>
 
+</div>
 
-<!-- JOINING -->
 
-<div class="card">
+<!-- CASTING DETAILS -->
 
-<h3>Joining Processes</h3>
+<div id="casting-display">
+
+<h2>METAL CASTING</h2>
+
+<h3>Casting Process</h3>
 
 <p>
-Welding, brazing, soldering and
-modern joining processes.
+Terminology, green sand molding, investment casting,
+die casting, patterns, molds and cores, solidification
+and cooling, riser and gating systems, and casting defects.
 </p>
 
-<button
-onclick="showTechnology('joining')"
-class="button">
 
-View Details
-
-</button>
-
-</div>
-
-
-<!-- SHEET METAL -->
-
-<div class="card">
-
-<h3>Sheet Metal Processes</h3>
+<h3>JOINING PROCESSES</h3>
 
 <p>
-Shearing, blanking, punching,
-bending, drawing and spinning.
+Gas welding: flame types and equipment;
+Electric Arc Welding (EAW), Gas Metal Arc Welding (GMAW),
+Gas Tungsten Arc Welding (GTAW); resistance welding:
+spot, seam, projection and flash; welding defects;
+laser beam and friction-stir welding; principles of
+brazing, soldering and adhesive bonding.
 </p>
 
-<button
-onclick="showTechnology('sheet')"
-class="button">
 
-View Details
-
-</button>
-
-</div>
-
-
-<!-- BULK DEFORMATION -->
-
-<div class="card">
-
-<h3>Bulk Deformation Processes</h3>
+<h3>SHEET METAL PROCESSES</h3>
 
 <p>
-Rolling, drawing, forging and
-extrusion processes.
+Principle of shearing, punch-die clearance;
+sheet metal operations including blanking, punching,
+bending, drawing and spinning; blanking force calculation;
+die-set: simple, progressive and compound; press:
+open back inclinable press and hydraulic press;
+deep drawing and bending processes.
 </p>
 
-<button
-onclick="showTechnology('bulk')"
-class="button">
 
-View Details
-
-</button>
-
-</div>
-
-
-<!-- POWDER METALLURGY -->
-
-<div class="card">
-
-<h3>Powder Metallurgy & Plastic Processing</h3>
+<h3>BULK DEFORMATION PROCESSES</h3>
 
 <p>
-Powder production, compacting,
-sintering and plastic processing.
+Plastic deformation, hot and cold working;
+rolling – rolling mills and defects in rolled parts;
+drawing – wire and rod drawing; forging – open and
+closed die forging, forging hammers and rotary swaging;
+extrusion – direct and indirect extrusion.
 </p>
 
-<button
-onclick="showTechnology('powder')"
-class="button">
 
-View Details
+<h3>POWDER METALLURGY AND PLASTIC PROCESSING</h3>
 
-</button>
+<p>
+Production of metal powder: atomization and crushing;
+blending; compacting; die pressing and isostatic pressing;
+sintering; types and characteristics of plastics;
+molding of thermoplastics and working principles.
+</p>
 
 </div>
-
-</div>
-
-
-<!-- ================= TECHNOLOGY DISPLAY ================= -->
-
-<div id="technology-display"></div>
 
 </section>
 
 
 <!-- ================= PROJECTS ================= -->
 
-function showProject(project) {
+<section id="projects">
 
-const projects = {
+<h2>Projects & Innovation</h2>
 
-project1: `
-<h2>Project 01 – Smart Manufacturing System</h2>
+<div class="cards">
 
-<p>
-<strong>Area:</strong> Manufacturing
-</p>
 
-<p>
-<strong>Status:</strong> Coming Soon
-</p>
+<!-- PROJECT 01 -->
+
+<div class="card">
+
+<h3>Project 01</h3>
 
 <p>
-Project details, design, manufacturing process,
-materials and results will be updated here.
+Smart Manufacturing System
 </p>
-`,
 
-project2: `
-<h2>Project 02 – Automated Material Handling System</h2>
+<button
+class="button"
+onclick="showProject('project1')">
+
+View Project
+
+</button>
+
+</div>
+
+
+<!-- PROJECT 02 -->
+
+<div class="card">
+
+<h3>Project 02</h3>
 
 <p>
-<strong>Area:</strong> Manufacturing Automation
+Automated Material Handling System
 </p>
+
+<button
+class="button"
+onclick="showProject('project2')">
+
+View Project
+
+</button>
+
+</div>
+
+
+<!-- PROJECT 03 -->
+
+<div class="card">
+
+<h3>Project 03</h3>
 
 <p>
-<strong>Status:</strong> Coming Soon
+CNC Manufacturing Innovation
 </p>
+
+<button
+class="button"
+onclick="showProject('project3')">
+
+View Project
+
+</button>
+
+</div>
+
+
+<!-- PROJECT 04 -->
+
+<div class="card">
+
+<h3>Project 04</h3>
 
 <p>
-The project focuses on improving material
-handling and movement inside manufacturing systems.
+3D Printing Prototype
 </p>
-`,
 
-project3: `
-<h2>Project 03 – CNC Manufacturing Innovation</h2>
+<button
+class="button"
+onclick="showProject('project4')">
+
+View Project
+
+</button>
+
+</div>
+
+
+<!-- PROJECT 05 -->
+
+<div class="card">
+
+<h3>Project 05</h3>
 
 <p>
-<strong>Area:</strong> CNC Machining
+Casting Process Improvement
 </p>
 
-<p>
-<strong>Status:</strong> Coming Soon
-</p>
+<button
+class="button"
+onclick="showProject('project5')">
 
-<p>
-The project focuses on CNC machining,
-precision manufacturing and process improvement.
-</p>
-`,
+View Project
 
-project4: `
-<h2>Project 04 – 3D Printing Prototype</h2>
+</button>
 
-<p>
-<strong>Area:</strong> Additive Manufacturing
-</p>
+</div>
 
-<p>
-<strong>Status:</strong> Coming Soon
-</p>
+</div>
 
-<p>
-The project focuses on developing mechanical
-prototypes using 3D printing technology.
-</p>
-`,
 
-project5: `
-<h2>Project 05 – Casting Process Improvement</h2>
+<!-- PROJECT INFORMATION BOX -->
 
-<p>
-<strong>Area:</strong> Metal Casting
-</p>
+<div id="project-display"></div>
 
-<p>
-<strong>Status:</strong> Coming Soon
-</p>
+</section>
 
-<p>
-The project focuses on understanding casting
-defects and improving casting quality.
-</p>
-`
-
-};
-
-const display =
-document.getElementById("project-display");
-
-display.innerHTML =
-projects[project];
-
-display.style.display =
-"block";
-
-display.scrollIntoView({
-
-behavior: "smooth",
-
-block: "center"
-
-});
-
-}
 
 <!-- ================= CONTACT ================= -->
 
@@ -1143,161 +1126,6 @@ function showProfile(member) {
 
 const profiles = {
 
-kavin: `
-
-<h2>Kavin R</h2>
-
-<p>
-<strong>Team:</strong>
-SIC Manufacturing Team
-</p>
-
-<p>
-<strong>Department:</strong>
-Mechanical Engineering
-</p>
-
-<p>
-<strong>College:</strong>
-Sri Ramakrishna Institute of Technology
-</p>
-
-<p>
-<strong>Role:</strong>
-Team Manager
-</p>
-
-`,
-
-dhanwin: `
-
-<h2>Dhanwin Kumar S</h2>
-
-<p>
-<strong>Team:</strong>
-SIC Manufacturing Team
-</p>
-
-<p>
-<strong>Department:</strong>
-Mechanical Engineering
-</p>
-
-<p>
-<strong>College:</strong>
-Sri Ramakrishna Institute of Technology
-</p>
-
-<p>
-<strong>Role:</strong>
-Team Leader
-</p>
-
-`,
-
-parathvaj: `
-
-<h2>Parathvaj S</h2>
-
-<p>
-<strong>Team:</strong>
-SIC Manufacturing Team
-</p>
-
-<p>
-<strong>Department:</strong>
-Mechanical Engineering
-</p>
-
-<p>
-<strong>College:</strong>
-Sri Ramakrishna Institute of Technology
-</p>
-
-<p>
-<strong>Role:</strong>
-Executive Member
-</p>
-
-`,
-
-kishore: `
-
-<h2>Kishore T</h2>
-
-<p>
-<strong>Team:</strong>
-SIC Manufacturing Team
-</p>
-
-<p>
-<strong>Department:</strong>
-Mechanical Engineering
-</p>
-
-<p>
-<strong>College:</strong>
-Sri Ramakrishna Institute of Technology
-</p>
-
-<p>
-<strong>Role:</strong>
-Executive Member
-</p>
-
-`,
-
-anbarasu: `
-
-<h2>Anbarasu S</h2>
-
-<p>
-<strong>Team:</strong>
-SIC Manufacturing Team
-</p>
-
-<p>
-<strong>Department:</strong>
-Mechanical Engineering
-</p>
-
-<p>
-<strong>College:</strong>
-Sri Ramakrishna Institute of Technology
-</p>
-
-<p>
-<strong>Role:</strong>
-Executive Member
-</p>
-
-`,
-
-pavin: `
-
-<h2>Pavin Narayanan K</h2>
-
-<p>
-<strong>Team:</strong>
-SIC Manufacturing Team
-</p>
-
-<p>
-<strong>Department:</strong>
-Mechanical Engineering
-</p>
-
-<p>
-<strong>College:</strong>
-Sri Ramakrishna Institute of Technology
-</p>
-
-<p>
-<strong>Role:</strong>
-Executive Member
-</p>
-
-`,
 
 mentor: `
 
@@ -1310,7 +1138,7 @@ Mentor / Head of the Department
 
 <p>
 <strong>Department:</strong>
-Mechanical Engineering
+Department of Mechanical Engineering
 </p>
 
 <p>
@@ -1321,6 +1149,162 @@ Sri Ramakrishna Institute of Technology
 <p>
 <strong>Team:</strong>
 SIC Manufacturing Team
+</p>
+
+`,
+
+kavin: `
+
+<h2>Kavin R</h2>
+
+<p>
+<strong>Role:</strong>
+Team Manager
+</p>
+
+<p>
+<strong>Team:</strong>
+SIC Manufacturing Team
+</p>
+
+<p>
+<strong>Department:</strong>
+Mechanical Engineering
+</p>
+
+<p>
+<strong>College:</strong>
+Sri Ramakrishna Institute of Technology
+</p>
+
+`,
+
+dhanwin: `
+
+<h2>Dhanwin Kumar S</h2>
+
+<p>
+<strong>Role:</strong>
+Team Leader
+</p>
+
+<p>
+<strong>Team:</strong>
+SIC Manufacturing Team
+</p>
+
+<p>
+<strong>Department:</strong>
+Mechanical Engineering
+</p>
+
+<p>
+<strong>College:</strong>
+Sri Ramakrishna Institute of Technology
+</p>
+
+`,
+
+parathvaj: `
+
+<h2>Parathvaj S</h2>
+
+<p>
+<strong>Role:</strong>
+Executive Member
+</p>
+
+<p>
+<strong>Team:</strong>
+SIC Manufacturing Team
+</p>
+
+<p>
+<strong>Department:</strong>
+Mechanical Engineering
+</p>
+
+<p>
+<strong>College:</strong>
+Sri Ramakrishna Institute of Technology
+</p>
+
+`,
+
+kishore: `
+
+<h2>Kishore T</h2>
+
+<p>
+<strong>Role:</strong>
+Executive Member
+</p>
+
+<p>
+<strong>Team:</strong>
+SIC Manufacturing Team
+</p>
+
+<p>
+<strong>Department:</strong>
+Mechanical Engineering
+</p>
+
+<p>
+<strong>College:</strong>
+Sri Ramakrishna Institute of Technology
+</p>
+
+`,
+
+anbarasu: `
+
+<h2>Anbarasu S</h2>
+
+<p>
+<strong>Role:</strong>
+Executive Member
+</p>
+
+<p>
+<strong>Team:</strong>
+SIC Manufacturing Team
+</p>
+
+<p>
+<strong>Department:</strong>
+Mechanical Engineering
+</p>
+
+<p>
+<strong>College:</strong>
+Sri Ramakrishna Institute of Technology
+</p>
+
+`,
+
+pavin: `
+
+<h2>Pavin Narayanan K</h2>
+
+<p>
+<strong>Role:</strong>
+Executive Member
+</p>
+
+<p>
+<strong>Team:</strong>
+SIC Manufacturing Team
+</p>
+
+<p>
+<strong>Department:</strong>
+Mechanical Engineering
+</p>
+
+<p>
+<strong>College:</strong>
+Sri Ramakrishna Institute of Technology
 </p>
 
 `
@@ -1348,224 +1332,237 @@ block: "center"
 }
 
 
-/* ================= TECHNOLOGY DETAILS ================= */
+/* ================= METAL CASTING ================= */
 
-function showTechnology(topic) {
+function showCasting() {
 
-const details = {
+const display =
+document.getElementById("casting-display");
+
+display.style.display =
+"block";
+
+display.scrollIntoView({
+
+behavior: "smooth",
+
+block: "center"
+
+});
+
+}
 
 
-casting: `
+/* ================= PROJECTS ================= */
 
-<h2>METAL CASTING</h2>
+function showProject(project) {
 
-<h3>Casting Process</h3>
+
+const projects = {
+
+
+project1: `
+
+<h2>PROJECT 01</h2>
+
+<h3>Smart Manufacturing System</h3>
 
 <p>
-Casting is a manufacturing process in which
-molten metal is poured into a mould cavity
-and allowed to solidify.
+<strong>Project Area:</strong>
+Manufacturing
 </p>
 
-<h3>Topics Covered</h3>
+<p>
+<strong>Department:</strong>
+Mechanical Engineering
+</p>
+
+<p>
+<strong>Team:</strong>
+SIC Manufacturing Team
+</p>
+
+<p>
+<strong>Status:</strong>
+In Development
+</p>
+
+<h3>About the Project</h3>
+
+<p>
+This project focuses on developing a smart
+manufacturing concept that can improve
+manufacturing efficiency, productivity and
+process monitoring.
+</p>
+
+<h3>Objective</h3>
+
+<p>
+The main objective is to understand modern
+manufacturing methods and develop an innovative
+solution for real-world manufacturing applications.
+</p>
+
+<h3>Technologies Used</h3>
 
 <ul>
 
-<li>Casting Terminology</li>
+<li>Manufacturing Processes</li>
 
-<li>Green Sand Moulding</li>
+<li>CAD / CAM</li>
 
-<li>Investment Casting</li>
+<li>CNC Technology</li>
 
-<li>Die Casting</li>
+<li>Automation</li>
 
-<li>Patterns</li>
-
-<li>Moulds and Cores</li>
-
-<li>Solidification and Cooling</li>
-
-<li>Riser and Gating Systems</li>
-
-<li>Casting Defects</li>
+<li>Mechanical Design</li>
 
 </ul>
+
+<h3>Expected Outcome</h3>
+
+<p>
+The project aims to provide practical knowledge,
+improve manufacturing skills and develop an
+innovative solution suitable for industrial applications.
+</p>
 
 `,
 
 
 
-joining: `
+project2: `
 
-<h2>JOINING PROCESSES</h2>
+<h2>PROJECT 02</h2>
 
-<h3>Topics Covered</h3>
+<h3>Automated Material Handling System</h3>
 
-<ul>
+<p>
+<strong>Project Area:</strong>
+Manufacturing Automation
+</p>
 
-<li>Gas Welding – Flame Types and Equipment</li>
+<p>
+<strong>Status:</strong>
+Coming Soon
+</p>
 
-<li>Electric Arc Welding (EAW)</li>
+<h3>About the Project</h3>
 
-<li>Gas Metal Arc Welding (GMAW)</li>
+<p>
+This project focuses on improving material
+movement and handling in manufacturing environments.
+</p>
 
-<li>Gas Tungsten Arc Welding (GTAW)</li>
+<h3>Objective</h3>
 
-<li>Resistance Welding</li>
-
-<li>Spot Welding</li>
-
-<li>Seam Welding</li>
-
-<li>Projection Welding</li>
-
-<li>Flash Welding</li>
-
-<li>Welding Defects</li>
-
-<li>Laser Beam Welding</li>
-
-<li>Friction Stir Welding</li>
-
-<li>Principles of Brazing</li>
-
-<li>Soldering</li>
-
-<li>Adhesive Bonding</li>
-
-</ul>
+<p>
+To understand automation concepts and develop
+an efficient material handling solution.
+</p>
 
 `,
 
 
 
-sheet: `
+project3: `
 
-<h2>SHEET METAL PROCESSES</h2>
+<h2>PROJECT 03</h2>
 
-<h3>Topics Covered</h3>
+<h3>CNC Manufacturing Innovation</h3>
 
-<ul>
+<p>
+<strong>Project Area:</strong>
+CNC Machining
+</p>
 
-<li>Principle of Shearing</li>
+<p>
+<strong>Status:</strong>
+Coming Soon
+</p>
 
-<li>Punch-Die Clearance</li>
+<h3>About the Project</h3>
 
-<li>Blanking</li>
+<p>
+This project focuses on CNC machining,
+precision manufacturing and process improvement.
+</p>
 
-<li>Punching</li>
+<h3>Objective</h3>
 
-<li>Bending</li>
-
-<li>Drawing</li>
-
-<li>Spinning</li>
-
-<li>Blanking Force Calculation</li>
-
-<li>Die-Set</li>
-
-<li>Simple Die</li>
-
-<li>Progressive Die</li>
-
-<li>Compound Die</li>
-
-<li>Open Back Inclinable Press</li>
-
-<li>Hydraulic Press</li>
-
-<li>Deep Drawing</li>
-
-<li>Bending Processes</li>
-
-</ul>
+<p>
+To understand CNC manufacturing operations
+and improve machining knowledge.
+</p>
 
 `,
 
 
 
-bulk: `
+project4: `
 
-<h2>BULK DEFORMATION PROCESSES</h2>
+<h2>PROJECT 04</h2>
 
-<h3>Topics Covered</h3>
+<h3>3D Printing Prototype</h3>
 
-<ul>
+<p>
+<strong>Project Area:</strong>
+Additive Manufacturing
+</p>
 
-<li>Plastic Deformation</li>
+<p>
+<strong>Status:</strong>
+Coming Soon
+</p>
 
-<li>Hot Working</li>
+<h3>About the Project</h3>
 
-<li>Cold Working</li>
+<p>
+This project focuses on developing mechanical
+prototypes using 3D printing technology.
+</p>
 
-<li>Rolling</li>
+<h3>Objective</h3>
 
-<li>Rolling Mills</li>
-
-<li>Defects in Rolled Parts</li>
-
-<li>Wire Drawing</li>
-
-<li>Rod Drawing</li>
-
-<li>Open Die Forging</li>
-
-<li>Closed Die Forging</li>
-
-<li>Forging Hammers</li>
-
-<li>Rotary Swaging</li>
-
-<li>Direct Extrusion</li>
-
-<li>Indirect Extrusion</li>
-
-</ul>
+<p>
+To understand additive manufacturing and
+prototype development.
+</p>
 
 `,
 
 
 
-powder: `
+project5: `
 
-<h2>POWDER METALLURGY AND PLASTIC PROCESSING</h2>
+<h2>PROJECT 05</h2>
 
-<h3>Powder Metallurgy</h3>
+<h3>Casting Process Improvement</h3>
 
-<ul>
+<p>
+<strong>Project Area:</strong>
+Metal Casting
+</p>
 
-<li>Production of Metal Powder</li>
+<p>
+<strong>Status:</strong>
+Coming Soon
+</p>
 
-<li>Atomization</li>
+<h3>About the Project</h3>
 
-<li>Crushing</li>
+<p>
+This project focuses on understanding casting
+processes and methods for reducing casting defects.
+</p>
 
-<li>Blending</li>
+<h3>Objective</h3>
 
-<li>Compacting</li>
-
-<li>Die Pressing</li>
-
-<li>Isostatic Pressing</li>
-
-<li>Sintering</li>
-
-</ul>
-
-<h3>Plastic Processing</h3>
-
-<ul>
-
-<li>Types and Characteristics of Plastics</li>
-
-<li>Moulding of Thermoplastics</li>
-
-<li>Working Principles</li>
-
-<li>Typical Applications</li>
-
-</ul>
+<p>
+To improve knowledge of moulding, gating,
+risering, solidification and casting defects.
+</p>
 
 `
 
@@ -1573,13 +1570,10 @@ powder: `
 
 
 const display =
-document.getElementById("technology-display");
+document.getElementById("project-display");
 
 display.innerHTML =
-details[topic];
-
-display.className =
-"technology-details";
+projects[project];
 
 display.style.display =
 "block";
