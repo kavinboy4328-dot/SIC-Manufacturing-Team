@@ -969,38 +969,115 @@ View Details
 
 <!-- ================= PROJECTS ================= -->
 
-<section id="projects">
+function showProject(project) {
 
-<h2>Projects & Innovation</h2>
+const projects = {
 
-<div class="cards">
-
-<div class="card">
-
-<h3>Project 01</h3>
+project1: `
+<h2>Project 01 – Smart Manufacturing System</h2>
 
 <p>
-Project details will be updated soon.
+<strong>Area:</strong> Manufacturing
 </p>
-
-</div>
-
-
-<div class="card">
-
-<h3>Innovation Ideas</h3>
 
 <p>
-Student manufacturing innovation ideas
-will be documented here.
+<strong>Status:</strong> Coming Soon
 </p>
 
-</div>
+<p>
+Project details, design, manufacturing process,
+materials and results will be updated here.
+</p>
+`,
 
-</div>
+project2: `
+<h2>Project 02 – Automated Material Handling System</h2>
 
-</section>
+<p>
+<strong>Area:</strong> Manufacturing Automation
+</p>
 
+<p>
+<strong>Status:</strong> Coming Soon
+</p>
+
+<p>
+The project focuses on improving material
+handling and movement inside manufacturing systems.
+</p>
+`,
+
+project3: `
+<h2>Project 03 – CNC Manufacturing Innovation</h2>
+
+<p>
+<strong>Area:</strong> CNC Machining
+</p>
+
+<p>
+<strong>Status:</strong> Coming Soon
+</p>
+
+<p>
+The project focuses on CNC machining,
+precision manufacturing and process improvement.
+</p>
+`,
+
+project4: `
+<h2>Project 04 – 3D Printing Prototype</h2>
+
+<p>
+<strong>Area:</strong> Additive Manufacturing
+</p>
+
+<p>
+<strong>Status:</strong> Coming Soon
+</p>
+
+<p>
+The project focuses on developing mechanical
+prototypes using 3D printing technology.
+</p>
+`,
+
+project5: `
+<h2>Project 05 – Casting Process Improvement</h2>
+
+<p>
+<strong>Area:</strong> Metal Casting
+</p>
+
+<p>
+<strong>Status:</strong> Coming Soon
+</p>
+
+<p>
+The project focuses on understanding casting
+defects and improving casting quality.
+</p>
+`
+
+};
+
+const display =
+document.getElementById("project-display");
+
+display.innerHTML =
+projects[project];
+
+display.style.display =
+"block";
+
+display.scrollIntoView({
+
+behavior: "smooth",
+
+block: "center"
+
+});
+
+}
 
 <!-- ================= CONTACT ================= -->
 
