@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>SIC Manufacturing Team | Mechanical Engineering | SRIT</title>
+<title>SIC Manufacturing Team | SRIT</title>
 
 <style>
-
 *{
     margin:0;
     padding:0;
@@ -19,133 +17,141 @@
 body{
     font-family:Arial,Helvetica,sans-serif;
     background:#f4f7fb;
-    color:#000000;
+    color:#000;
     line-height:1.6;
 }
 
-/* ================= HEADER ================= */
-
 header{
     min-height:650px;
-
-    background-image:
-    linear-gradient(
-        rgba(0,0,0,0.62),
-        rgba(0,0,0,0.62)
-    ),
+    background:
+    linear-gradient(rgba(0,0,0,.62),rgba(0,0,0,.62)),
     url("mechanical-bg.jpg");
-
     background-size:cover;
     background-position:center;
-    background-repeat:no-repeat;
-
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
-
     text-align:center;
     color:white;
-
     padding:40px 20px;
 }
 
 header h1{
     font-size:48px;
-    margin-bottom:18px;
-    text-transform:uppercase;
-    letter-spacing:1px;
+    margin-bottom:15px;
 }
 
 header h2{
     font-size:25px;
-    margin-bottom:12px;
+    margin-bottom:10px;
 }
 
 header p{
-    font-size:19px;
-    margin:5px;
+    font-size:18px;
+}
+
+.hero-button,
+.button{
+    display:inline-block;
+    padding:11px 20px;
+    margin-top:15px;
+    border:0;
+    border-radius:7px;
+    background:#111827;
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    cursor:pointer;
 }
 
 .hero-button{
-    display:inline-block;
-    margin-top:28px;
-    padding:14px 28px;
-
     background:white;
-    color:#000000;
-
-    text-decoration:none;
-    border-radius:8px;
-    font-weight:bold;
-
-    transition:0.3s;
+    color:#000;
 }
 
+.button:hover,
 .hero-button:hover{
-    background:#e5e7eb;
-    transform:translateY(-3px);
+    opacity:.8;
 }
-
-/* ================= NAVIGATION ================= */
 
 nav{
     position:sticky;
     top:0;
     z-index:1000;
-
     background:#111827;
-    padding:16px;
-
+    padding:15px;
     text-align:center;
 }
 
 nav a{
     color:white;
     text-decoration:none;
-    margin:0 12px;
+    margin:0 10px;
     font-weight:bold;
-    display:inline-block;
 }
-
-nav a:hover{
-    color:#d1d5db;
-}
-
-/* ================= SECTION ================= */
 
 section{
     max-width:1100px;
-    margin:45px auto;
-    padding:45px 25px;
-
+    margin:40px auto;
+    padding:40px 25px;
     background:white;
-    border-radius:16px;
-
-    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
 }
 
 section h2{
     text-align:center;
-    color:#000000;
     font-size:32px;
     margin-bottom:25px;
+    color:#000;
 }
 
 .intro{
     text-align:center;
-    font-size:17px;
-    line-height:1.8;
-    color:#000000;
 }
 
-/* ================= STATS ================= */
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+    gap:20px;
+}
+
+.card,
+.team-card{
+    background:#f8fafc;
+    border:1px solid #d1d5db;
+    border-radius:12px;
+    padding:25px;
+    text-align:center;
+}
+
+.card h3,
+.team-card h3{
+    margin-bottom:12px;
+    color:#000;
+}
+
+.card p,
+.team-card p{
+    color:#000;
+}
+
+.team-photo{
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    background:#d1d5db;
+    margin:0 auto 15px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:35px;
+}
 
 .stats{
     display:grid;
-    grid-template-columns:
-    repeat(auto-fit,minmax(180px,1fr));
-
+    grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
     gap:20px;
     margin-top:30px;
 }
@@ -153,238 +159,70 @@ section h2{
 .stat{
     background:#f1f5f9;
     padding:25px;
-    border-radius:12px;
     text-align:center;
+    border-radius:12px;
 }
 
 .stat h3{
-    color:#000000;
-    font-size:34px;
-    margin-bottom:8px;
+    font-size:32px;
 }
 
-.stat p{
-    color:#000000;
-}
-
-/* ================= CARDS ================= */
-
-.cards{
-    display:grid;
-    grid-template-columns:
-    repeat(auto-fit,minmax(220px,1fr));
-
-    gap:22px;
-}
-
-.card{
-    background:#f8fafc;
-
-    padding:25px;
-    border-radius:14px;
-
-    text-align:center;
-
-    border:1px solid #d1d5db;
-
-    transition:0.3s;
-}
-
-.card:hover{
-    transform:translateY(-5px);
-    box-shadow:0 8px 20px rgba(0,0,0,0.12);
-}
-
-.card h3{
-    color:#000000;
-    margin-bottom:12px;
-}
-
-.card p{
-    color:#000000;
-    margin-bottom:15px;
-}
-
-/* ================= TEAM ================= */
-
-.team-card{
-    background:#f1f5f9;
-
-    padding:28px;
-    border-radius:14px;
-
-    text-align:center;
-
-    transition:0.3s;
-
-    border:1px solid #d1d5db;
-}
-
-.team-card:hover{
-    transform:translateY(-5px);
-    box-shadow:0 8px 20px rgba(0,0,0,0.12);
-}
-
-.team-photo{
-    width:100px;
-    height:100px;
-
-    margin:0 auto 18px;
-
-    border-radius:50%;
-
-    background:#d1d5db;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    font-size:40px;
-}
-
-.team-card h3{
-    color:#000000;
-    margin-bottom:8px;
-}
-
-.team-card p{
-    color:#000000;
-    margin-bottom:15px;
-}
-
-/* ================= BUTTON ================= */
-
-.button{
-    display:inline-block;
-
-    border:none;
-
-    padding:10px 18px;
-
-    background:#111827;
-    color:white;
-
-    text-decoration:none;
-
-    border-radius:7px;
-
-    font-weight:bold;
-    cursor:pointer;
-
-    transition:0.3s;
-}
-
-.button:hover{
-    background:#374151;
-    transform:translateY(-2px);
-}
-
-/* ================= DETAILS BOX ================= */
+/* DETAILS BOX */
 
 .details-box{
-
     display:none;
-
-    margin-top:35px;
-
-    padding:35px;
-
+    margin-top:30px;
+    padding:30px;
     background:#f8fafc;
-
-    border-radius:14px;
-
-    border:2px solid #d1d5db;
-
-    color:#000000;
-
-    text-align:left;
-
-    animation:openBox 0.3s ease;
+    border:2px solid #111827;
+    border-radius:12px;
+    color:#000;
 }
 
-@keyframes openBox{
-
-    from{
-        opacity:0;
-        transform:translateY(15px);
-    }
-
-    to{
-        opacity:1;
-        transform:translateY(0);
-    }
+.details-box.active{
+    display:block;
 }
 
 .details-box h2{
-    text-align:center;
-    color:#000000;
     margin-bottom:20px;
 }
 
 .details-box h3{
-    color:#000000;
-    margin-top:22px;
+    margin-top:18px;
     margin-bottom:8px;
-}
-
-.details-box p{
-    color:#000000;
-    margin:10px 0;
 }
 
 .details-box ul{
     margin-left:25px;
-    color:#000000;
 }
 
-.details-box li{
-    margin:7px 0;
+.close-button{
+    display:block;
+    margin:25px auto 0;
+    padding:10px 20px;
+    border:0;
+    border-radius:7px;
+    background:#111827;
+    color:white;
+    cursor:pointer;
 }
-
-/* ================= INDUSTRY ================= */
 
 .visit-box{
-    background:#f8fafc;
-
     padding:30px;
-
+    background:#f8fafc;
     border-left:5px solid #111827;
-
-    border-radius:10px;
-
     text-align:center;
-
-    color:#000000;
 }
-
-.visit-box h3{
-    color:#000000;
-}
-
-.visit-box p{
-    color:#000000;
-}
-
-/* ================= FOOTER ================= */
 
 footer{
     background:#111827;
-
     color:white;
-
     text-align:center;
-
-    padding:35px 15px;
-
-    margin-top:50px;
-
-    line-height:1.8;
+    padding:30px;
+    margin-top:40px;
 }
 
-/* ================= MOBILE ================= */
-
 @media(max-width:700px){
-
     header h1{
         font-size:32px;
     }
@@ -393,29 +231,22 @@ footer{
         font-size:20px;
     }
 
-    header p{
-        font-size:16px;
-    }
-
     nav a{
-        margin:7px;
+        display:inline-block;
+        margin:6px;
     }
 
     section{
         margin:25px 12px;
         padding:30px 18px;
     }
-
 }
-
 </style>
-
 </head>
 
 <body>
 
-
-<!-- ================= HOME ================= -->
+<!-- HOME -->
 
 <header id="home">
 
@@ -429,58 +260,38 @@ footer{
 
 <p>Learn • Innovate • Manufacture</p>
 
-<a href="#team" class="hero-button">
-Explore Our Team
-</a>
+<a href="#team" class="hero-button">Explore Our Team</a>
 
 </header>
 
 
-<!-- ================= NAVIGATION ================= -->
+<!-- NAVIGATION -->
 
 <nav>
-
 <a href="#home">Home</a>
-
 <a href="#about">About</a>
-
 <a href="#team">Our Team</a>
-
 <a href="#industry">Industry Visit</a>
-
 <a href="#technology">Technology</a>
-
 <a href="#projects">Projects</a>
-
 <a href="#contact">Contact</a>
-
 </nav>
 
 
-<!-- ================= ABOUT ================= -->
+<!-- ABOUT -->
 
 <section id="about">
 
 <h2>About SIC Manufacturing Team</h2>
 
 <p class="intro">
-
 The SIC Manufacturing Team is a student-driven initiative
 of the Department of Mechanical Engineering at
 Sri Ramakrishna Institute of Technology.
-
 <br><br>
-
 Our team focuses on practical manufacturing knowledge,
 industrial exposure, innovation and project-based learning.
-
-<br><br>
-
-Our goal is to connect classroom learning with
-real-world manufacturing industries.
-
 </p>
-
 
 <div class="stats">
 
@@ -509,7 +320,7 @@ real-world manufacturing industries.
 </section>
 
 
-<!-- ================= OUR TEAM ================= -->
+<!-- TEAM -->
 
 <section id="team">
 
@@ -518,162 +329,106 @@ real-world manufacturing industries.
 <div class="cards">
 
 
-<!-- HOD -->
-
 <div class="team-card">
 
-<div class="team-photo">
-🎓
-</div>
+<div class="team-photo">🎓</div>
 
 <h3>P T Saravana Kumar</h3>
 
 <p>Mentor / HOD</p>
 
-<button
-class="button"
-onclick="showProfile('mentor')">
-
+<button class="button" onclick="openMember('mentor')">
 View Profile
-
 </button>
 
 </div>
 
 
-<!-- KAVIN -->
-
 <div class="team-card">
 
-<div class="team-photo">
-👤
-</div>
+<div class="team-photo">👤</div>
 
 <h3>Kavin R</h3>
 
 <p>Team Manager</p>
 
-<button
-class="button"
-onclick="showProfile('kavin')">
-
+<button class="button" onclick="openMember('kavin')">
 View Profile
-
 </button>
 
 </div>
 
 
-<!-- DHANWIN -->
-
 <div class="team-card">
 
-<div class="team-photo">
-👤
-</div>
+<div class="team-photo">👤</div>
 
 <h3>Dhanwin Kumar S</h3>
 
 <p>Team Leader</p>
 
-<button
-class="button"
-onclick="showProfile('dhanwin')">
-
+<button class="button" onclick="openMember('dhanwin')">
 View Profile
-
 </button>
 
 </div>
 
 
-<!-- PARATHVAJ -->
-
 <div class="team-card">
 
-<div class="team-photo">
-👤
-</div>
+<div class="team-photo">👤</div>
 
 <h3>Parathvaj S</h3>
 
 <p>Executive Member</p>
 
-<button
-class="button"
-onclick="showProfile('parathvaj')">
-
+<button class="button" onclick="openMember('parathvaj')">
 View Profile
-
 </button>
 
 </div>
 
 
-<!-- KISHORE -->
-
 <div class="team-card">
 
-<div class="team-photo">
-👤
-</div>
+<div class="team-photo">👤</div>
 
 <h3>Kishore T</h3>
 
 <p>Executive Member</p>
 
-<button
-class="button"
-onclick="showProfile('kishore')">
-
+<button class="button" onclick="openMember('kishore')">
 View Profile
-
 </button>
 
 </div>
 
 
-<!-- ANBARASU -->
-
 <div class="team-card">
 
-<div class="team-photo">
-👤
-</div>
+<div class="team-photo">👤</div>
 
 <h3>Anbarasu S</h3>
 
 <p>Executive Member</p>
 
-<button
-class="button"
-onclick="showProfile('anbarasu')">
-
+<button class="button" onclick="openMember('anbarasu')">
 View Profile
-
 </button>
 
 </div>
 
 
-<!-- PAVIN -->
-
 <div class="team-card">
 
-<div class="team-photo">
-👤
-</div>
+<div class="team-photo">👤</div>
 
 <h3>Pavin Narayanan K</h3>
 
 <p>Executive Member</p>
 
-<button
-class="button"
-onclick="showProfile('pavin')">
-
+<button class="button" onclick="openMember('pavin')">
 View Profile
-
 </button>
 
 </div>
@@ -681,14 +436,12 @@ View Profile
 </div>
 
 
-<!-- PROFILE DISPLAY -->
-
-<div id="profile-display" class="details-box"></div>
+<div id="memberBox" class="details-box"></div>
 
 </section>
 
 
-<!-- ================= INDUSTRY VISIT ================= -->
+<!-- INDUSTRY -->
 
 <section id="industry">
 
@@ -698,37 +451,18 @@ View Profile
 
 <h3>Upcoming Industry Visit</h3>
 
-<br>
+<p><strong>Company:</strong> Not Visited Yet</p>
 
-<p>
-<strong>Company:</strong>
-Not Visited Yet
-</p>
+<p><strong>Location:</strong> To be updated</p>
 
-<p>
-<strong>Location:</strong>
-To be updated
-</p>
-
-<p>
-<strong>Date:</strong>
-To be updated
-</p>
-
-<br>
-
-<p>
-Industry visit details, manufacturing processes,
-learning outcomes and photographs will be updated
-after the visit.
-</p>
+<p><strong>Date:</strong> To be updated</p>
 
 </div>
 
 </section>
 
 
-<!-- ================= MANUFACTURING TECHNOLOGY ================= -->
+<!-- MANUFACTURING TECHNOLOGY -->
 
 <section id="technology">
 
@@ -737,51 +471,37 @@ after the visit.
 <div class="cards">
 
 
-<!-- 1 METAL CASTING -->
-
 <div class="card">
 
 <h3>Metal Casting</h3>
 
 <p>
-Casting process, moulding, patterns,
+Casting, moulding, patterns,
 cores, gating, risers and defects.
 </p>
 
-<button
-class="button"
-onclick="showTechnology('casting')">
-
+<button class="button" onclick="openTechnology('casting')">
 View Details
-
 </button>
 
 </div>
 
-
-<!-- 2 JOINING -->
 
 <div class="card">
 
 <h3>Joining Processes</h3>
 
 <p>
-Welding, brazing, soldering and
-advanced joining processes.
+Gas welding, arc welding,
+GMAW, GTAW and resistance welding.
 </p>
 
-<button
-class="button"
-onclick="showTechnology('joining')">
-
+<button class="button" onclick="openTechnology('joining')">
 View Details
-
 </button>
 
 </div>
 
-
-<!-- 3 SHEET METAL -->
 
 <div class="card">
 
@@ -792,40 +512,28 @@ Shearing, blanking, punching,
 bending, drawing and spinning.
 </p>
 
-<button
-class="button"
-onclick="showTechnology('sheet')">
-
+<button class="button" onclick="openTechnology('sheet')">
 View Details
-
 </button>
 
 </div>
 
-
-<!-- 4 BULK DEFORMATION -->
 
 <div class="card">
 
 <h3>Bulk Deformation Processes</h3>
 
 <p>
-Rolling, drawing, forging and
-extrusion processes.
+Rolling, drawing, forging
+and extrusion.
 </p>
 
-<button
-class="button"
-onclick="showTechnology('bulk')">
-
+<button class="button" onclick="openTechnology('bulk')">
 View Details
-
 </button>
 
 </div>
 
-
-<!-- 5 POWDER METALLURGY -->
 
 <div class="card">
 
@@ -836,34 +544,24 @@ Powder production, compacting,
 sintering and plastic processing.
 </p>
 
-<button
-class="button"
-onclick="showTechnology('powder')">
-
+<button class="button" onclick="openTechnology('powder')">
 View Details
-
 </button>
 
 </div>
 
-
-<!-- 6 CNC -->
 
 <div class="card">
 
 <h3>Manufacturing Automation & CNC</h3>
 
 <p>
-CNC machining, automation,
-CAD/CAM and modern manufacturing.
+CNC machining, CAD/CAM,
+automation and robotics.
 </p>
 
-<button
-class="button"
-onclick="showTechnology('cnc')">
-
+<button class="button" onclick="openTechnology('cnc')">
 View Details
-
 </button>
 
 </div>
@@ -871,14 +569,12 @@ View Details
 </div>
 
 
-<!-- TECHNOLOGY DETAILS -->
-
-<div id="technology-display" class="details-box"></div>
+<div id="technologyBox" class="details-box"></div>
 
 </section>
 
 
-<!-- ================= PROJECTS ================= -->
+<!-- PROJECTS -->
 
 <section id="projects">
 
@@ -887,106 +583,66 @@ View Details
 <div class="cards">
 
 
-<!-- PROJECT 01 -->
-
 <div class="card">
 
 <h3>Project 01</h3>
 
-<p>
-Smart Manufacturing System
-</p>
+<p>Smart Manufacturing System</p>
 
-<button
-class="button"
-onclick="showProject('project1')">
-
+<button class="button" onclick="openProject('p1')">
 View Project
-
 </button>
 
 </div>
 
-
-<!-- PROJECT 02 -->
 
 <div class="card">
 
 <h3>Project 02</h3>
 
-<p>
-Automated Material Handling System
-</p>
+<p>Automated Material Handling System</p>
 
-<button
-class="button"
-onclick="showProject('project2')">
-
+<button class="button" onclick="openProject('p2')">
 View Project
-
 </button>
 
 </div>
 
-
-<!-- PROJECT 03 -->
 
 <div class="card">
 
 <h3>Project 03</h3>
 
-<p>
-CNC Manufacturing Innovation
-</p>
+<p>CNC Manufacturing Innovation</p>
 
-<button
-class="button"
-onclick="showProject('project3')">
-
+<button class="button" onclick="openProject('p3')">
 View Project
-
 </button>
 
 </div>
 
-
-<!-- PROJECT 04 -->
 
 <div class="card">
 
 <h3>Project 04</h3>
 
-<p>
-3D Printing Prototype
-</p>
+<p>3D Printing Prototype</p>
 
-<button
-class="button"
-onclick="showProject('project4')">
-
+<button class="button" onclick="openProject('p4')">
 View Project
-
 </button>
 
 </div>
 
-
-<!-- PROJECT 05 -->
 
 <div class="card">
 
 <h3>Project 05</h3>
 
-<p>
-Casting Process Improvement
-</p>
+<p>Casting Process Improvement</p>
 
-<button
-class="button"
-onclick="showProject('project5')">
-
+<button class="button" onclick="openProject('p5')">
 View Project
-
 </button>
 
 </div>
@@ -994,14 +650,12 @@ View Project
 </div>
 
 
-<!-- PROJECT DISPLAY -->
-
-<div id="project-display" class="details-box"></div>
+<div id="projectBox" class="details-box"></div>
 
 </section>
 
 
-<!-- ================= CONTACT ================= -->
+<!-- CONTACT -->
 
 <section id="contact">
 
@@ -1009,41 +663,32 @@ View Project
 
 <p class="intro">
 
-<strong>Club:</strong>
-Student Innovation Club (SIC)
+<strong>Club:</strong> Student Innovation Club (SIC)
 
 <br><br>
 
-<strong>Team:</strong>
-Manufacturing Team
+<strong>Team:</strong> Manufacturing Team
 
 <br><br>
 
-<strong>Department:</strong>
-Mechanical Engineering
+<strong>Department:</strong> Mechanical Engineering
 
 <br><br>
 
-<strong>College:</strong>
-Sri Ramakrishna Institute of Technology
+<strong>College:</strong> Sri Ramakrishna Institute of Technology
 
 <br><br>
 
-<strong>Location:</strong>
-Coimbatore, Tamil Nadu
+<strong>Location:</strong> Coimbatore, Tamil Nadu
 
 </p>
 
 </section>
 
 
-<!-- ================= FOOTER ================= -->
-
 <footer>
 
-<p>
-© 2026 SIC Manufacturing Team
-</p>
+<p>© 2026 SIC Manufacturing Team</p>
 
 <p>
 Student Innovation Club |
@@ -1054,541 +699,530 @@ Sri Ramakrishna Institute of Technology
 </footer>
 
 
-<!-- ================= JAVASCRIPT ================= -->
+<!-- JAVASCRIPT -->
 
 <script>
 
-
 /* ================= MEMBER PROFILE ================= */
 
-function showProfile(member){
+function openMember(member){
 
-const profiles={
+    var box = document.getElementById("memberBox");
 
-mentor:`
+    var content = "";
 
-<h2>P T Saravana Kumar</h2>
+    if(member === "mentor"){
 
-<p>
-<strong>Role:</strong>
-Mentor / Head of the Department
-</p>
+        content = `
+        <h2>P T Saravana Kumar</h2>
 
-<p>
-<strong>Department:</strong>
-Department of Mechanical Engineering
-</p>
+        <p><strong>Role:</strong> Mentor / Head of Department</p>
 
-<p>
-<strong>College:</strong>
-Sri Ramakrishna Institute of Technology
-</p>
+        <p><strong>Department:</strong> Department of Mechanical Engineering</p>
 
-<p>
-<strong>Team:</strong>
-SIC Manufacturing Team
-</p>
+        <p><strong>College:</strong> Sri Ramakrishna Institute of Technology</p>
 
-`,
+        <p><strong>Team:</strong> SIC Manufacturing Team</p>
+        `;
 
-kavin:`
+    }
 
-<h2>Kavin R</h2>
+    else if(member === "kavin"){
 
-<p>
-<strong>Role:</strong>
-Team Manager
-</p>
+        content = `
+        <h2>Kavin R</h2>
 
-<p>
-<strong>Team:</strong>
-SIC Manufacturing Team
-</p>
+        <p><strong>Role:</strong> Team Manager</p>
 
-<p>
-<strong>Department:</strong>
-Mechanical Engineering
-</p>
+        <p><strong>Department:</strong> Mechanical Engineering</p>
 
-<p>
-<strong>College:</strong>
-Sri Ramakrishna Institute of Technology
-</p>
+        <p><strong>College:</strong> Sri Ramakrishna Institute of Technology</p>
 
-`,
+        <p><strong>Team:</strong> SIC Manufacturing Team</p>
+        `;
 
-dhanwin:`
+    }
 
-<h2>Dhanwin Kumar S</h2>
+    else if(member === "dhanwin"){
 
-<p>
-<strong>Role:</strong>
-Team Leader
-</p>
+        content = `
+        <h2>Dhanwin Kumar S</h2>
 
-<p>
-<strong>Team:</strong>
-SIC Manufacturing Team
-</p>
+        <p><strong>Role:</strong> Team Leader</p>
 
-<p>
-<strong>Department:</strong>
-Mechanical Engineering
-</p>
+        <p><strong>Department:</strong> Mechanical Engineering</p>
 
-<p>
-<strong>College:</strong>
-Sri Ramakrishna Institute of Technology
-</p>
+        <p><strong>College:</strong> Sri Ramakrishna Institute of Technology</p>
 
-`,
+        <p><strong>Team:</strong> SIC Manufacturing Team</p>
+        `;
 
-parathvaj:`
+    }
 
-<h2>Parathvaj S</h2>
+    else if(member === "parathvaj"){
 
-<p>
-<strong>Role:</strong>
-Executive Member
-</p>
+        content = `
+        <h2>Parathvaj S</h2>
 
-<p>
-<strong>Team:</strong>
-SIC Manufacturing Team
-</p>
+        <p><strong>Role:</strong> Executive Member</p>
 
-<p>
-<strong>Department:</strong>
-Mechanical Engineering
-</p>
+        <p><strong>Department:</strong> Mechanical Engineering</p>
 
-<p>
-<strong>College:</strong>
-Sri Ramakrishna Institute of Technology
-</p>
+        <p><strong>College:</strong> Sri Ramakrishna Institute of Technology</p>
 
-`,
+        <p><strong>Team:</strong> SIC Manufacturing Team</p>
+        `;
 
-kishore:`
+    }
 
-<h2>Kishore T</h2>
+    else if(member === "kishore"){
 
-<p>
-<strong>Role:</strong>
-Executive Member
-</p>
+        content = `
+        <h2>Kishore T</h2>
 
-<p>
-<strong>Team:</strong>
-SIC Manufacturing Team
-</p>
+        <p><strong>Role:</strong> Executive Member</p>
 
-<p>
-<strong>Department:</strong>
-Mechanical Engineering
-</p>
+        <p><strong>Department:</strong> Mechanical Engineering</p>
 
-<p>
-<strong>College:</strong>
-Sri Ramakrishna Institute of Technology
-</p>
+        <p><strong>College:</strong> Sri Ramakrishna Institute of Technology</p>
 
-`,
+        <p><strong>Team:</strong> SIC Manufacturing Team</p>
+        `;
 
-anbarasu:`
+    }
 
-<h2>Anbarasu S</h2>
+    else if(member === "anbarasu"){
 
-<p>
-<strong>Role:</strong>
-Executive Member
-</p>
+        content = `
+        <h2>Anbarasu S</h2>
 
-<p>
-<strong>Team:</strong>
-SIC Manufacturing Team
-</p>
+        <p><strong>Role:</strong> Executive Member</p>
 
-<p>
-<strong>Department:</strong>
-Mechanical Engineering
-</p>
+        <p><strong>Department:</strong> Mechanical Engineering</p>
 
-<p>
-<strong>College:</strong>
-Sri Ramakrishna Institute of Technology
-</p>
+        <p><strong>College:</strong> Sri Ramakrishna Institute of Technology</p>
 
-`,
+        <p><strong>Team:</strong> SIC Manufacturing Team</p>
+        `;
 
-pavin:`
+    }
 
-<h2>Pavin Narayanan K</h2>
+    else if(member === "pavin"){
 
-<p>
-<strong>Role:</strong>
-Executive Member
-</p>
+        content = `
+        <h2>Pavin Narayanan K</h2>
 
-<p>
-<strong>Team:</strong>
-SIC Manufacturing Team
-</p>
+        <p><strong>Role:</strong> Executive Member</p>
 
-<p>
-<strong>Department:</strong>
-Mechanical Engineering
-</p>
+        <p><strong>Department:</strong> Mechanical Engineering</p>
 
-<p>
-<strong>College:</strong>
-Sri Ramakrishna Institute of Technology
-</p>
+        <p><strong>College:</strong> Sri Ramakrishna Institute of Technology</p>
 
-`
+        <p><strong>Team:</strong> SIC Manufacturing Team</p>
+        `;
 
-};
+    }
 
-const display=document.getElementById("profile-display");
+    box.innerHTML = content + `
+        <button class="close-button" onclick="closeBox('memberBox')">
+        Close
+        </button>
+    `;
 
-display.innerHTML=profiles[member];
+    box.classList.add("active");
 
-display.style.display="block";
-
-display.scrollIntoView({
-behavior:"smooth",
-block:"center"
-});
-
+    box.scrollIntoView({
+        behavior:"smooth",
+        block:"center"
+    });
 }
 
 
-/* ================= MANUFACTURING TECHNOLOGY ================= */
+/* ================= TECHNOLOGY ================= */
 
-function showTechnology(topic){
+function openTechnology(topic){
 
-const technologies={
+    var box = document.getElementById("technologyBox");
 
+    var content = "";
 
-casting:`
 
-<h2>METAL CASTING</h2>
+    if(topic === "casting"){
 
-<h3>Casting Process</h3>
+        content = `
+        <h2>METAL CASTING</h2>
 
-<p>
-Terminology, green sand molding, investment casting,
-die casting, patterns, molds and cores,
-solidification and cooling, riser and gating systems,
-and casting defects.
-</p>
+        <h3>Casting Process</h3>
 
-<h3>Important Areas</h3>
+        <p>
+        Casting terminology, green sand moulding,
+        investment casting, die casting, patterns,
+        moulds and cores, solidification and cooling,
+        riser and gating systems and casting defects.
+        </p>
 
-<ul>
-<li>Casting Terminology</li>
-<li>Green Sand Moulding</li>
-<li>Investment Casting</li>
-<li>Die Casting</li>
-<li>Patterns</li>
-<li>Moulds and Cores</li>
-<li>Solidification and Cooling</li>
-<li>Riser and Gating Systems</li>
-<li>Casting Defects</li>
-</ul>
+        <h3>Main Topics</h3>
 
-`,
+        <ul>
+        <li>Casting Terminology</li>
+        <li>Green Sand Moulding</li>
+        <li>Investment Casting</li>
+        <li>Die Casting</li>
+        <li>Patterns</li>
+        <li>Moulds and Cores</li>
+        <li>Solidification and Cooling</li>
+        <li>Riser and Gating Systems</li>
+        <li>Casting Defects</li>
+        </ul>
+        `;
 
+    }
 
 
-joining:`
+    else if(topic === "joining"){
 
-<h2>JOINING PROCESSES</h2>
+        content = `
+        <h2>JOINING PROCESSES</h2>
 
-<h3>Welding Processes</h3>
+        <h3>Welding</h3>
 
-<p>
-Gas welding: flame types and equipment;
-Electric Arc Welding (EAW), Gas Metal Arc Welding
-(GMAW), Gas Tungsten Arc Welding (GTAW).
-</p>
+        <p>
+        Gas welding, flame types and equipment,
+        Electric Arc Welding (EAW),
+        Gas Metal Arc Welding (GMAW) and
+        Gas Tungsten Arc Welding (GTAW).
+        </p>
 
-<h3>Resistance Welding</h3>
+        <h3>Resistance Welding</h3>
 
-<p>
-Spot welding, seam welding, projection welding
-and flash welding.
-</p>
+        <p>
+        Spot, seam, projection and flash welding.
+        </p>
 
-<h3>Advanced Joining</h3>
+        <h3>Advanced Processes</h3>
 
-<p>
-Welding defects, laser beam welding,
-friction-stir welding, brazing, soldering
-and adhesive bonding.
-</p>
+        <p>
+        Welding defects, laser beam welding,
+        friction-stir welding, brazing,
+        soldering and adhesive bonding.
+        </p>
+        `;
 
-`,
+    }
 
 
+    else if(topic === "sheet"){
 
-sheet:`
+        content = `
+        <h2>SHEET METAL PROCESSES</h2>
 
-<h2>SHEET METAL PROCESSES</h2>
+        <h3>Basic Principles</h3>
 
-<h3>Basic Principles</h3>
+        <p>
+        Principle of shearing and punch-die clearance.
+        </p>
 
-<p>
-Principle of shearing and punch-die clearance.
-</p>
+        <h3>Sheet Metal Operations</h3>
 
-<h3>Sheet Metal Operations</h3>
+        <ul>
+        <li>Blanking</li>
+        <li>Punching</li>
+        <li>Bending</li>
+        <li>Drawing</li>
+        <li>Spinning</li>
+        <li>Blanking Force Calculation</li>
+        </ul>
 
-<ul>
-<li>Blanking</li>
-<li>Punching</li>
-<li>Bending</li>
-<li>Drawing</li>
-<li>Spinning</li>
-<li>Blanking Force Calculation</li>
-</ul>
+        <h3>Die Sets</h3>
 
-<h3>Die Sets and Presses</h3>
+        <p>
+        Simple, progressive and compound die sets.
+        </p>
 
-<p>
-Simple, progressive and compound die sets;
-open back inclinable press and hydraulic press.
-</p>
+        <h3>Presses</h3>
 
-<h3>Deep Drawing</h3>
+        <p>
+        Open back inclinable press and hydraulic press.
+        </p>
 
-<p>
-Principles and applications of deep drawing
-and bending processes.
-</p>
+        <h3>Deep Drawing</h3>
 
-`,
+        <p>
+        Deep drawing and bending processes.
+        </p>
+        `;
 
+    }
 
 
-bulk:`
+    else if(topic === "bulk"){
 
-<h2>BULK DEFORMATION PROCESSES</h2>
+        content = `
+        <h2>BULK DEFORMATION PROCESSES</h2>
 
-<h3>Plastic Deformation</h3>
+        <h3>Plastic Deformation</h3>
 
-<p>
-Plastic deformation and hot and cold working.
-</p>
+        <p>
+        Plastic deformation and hot and cold working.
+        </p>
 
-<h3>Rolling</h3>
+        <h3>Rolling</h3>
 
-<p>
-Rolling mills and defects in rolled parts.
-</p>
+        <p>
+        Rolling mills and defects in rolled parts.
+        </p>
 
-<h3>Drawing</h3>
+        <h3>Drawing</h3>
 
-<p>
-Wire drawing and rod drawing processes.
-</p>
+        <p>
+        Wire and rod drawing.
+        </p>
 
-<h3>Forging</h3>
+        <h3>Forging</h3>
 
-<p>
-Open die forging, closed die forging,
-forging hammers and rotary swaging.
-</p>
+        <p>
+        Open and closed die forging,
+        forging hammers and rotary swaging.
+        </p>
 
-<h3>Extrusion</h3>
+        <h3>Extrusion</h3>
 
-<p>
-Direct extrusion and indirect extrusion.
-</p>
+        <p>
+        Direct and indirect extrusion.
+        </p>
+        `;
 
-`,
+    }
 
 
+    else if(topic === "powder"){
 
-powder:`
+        content = `
+        <h2>POWDER METALLURGY AND PLASTIC PROCESSING</h2>
 
-<h2>POWDER METALLURGY AND PLASTIC PROCESSING</h2>
+        <h3>Production of Metal Powder</h3>
 
-<h3>Powder Production</h3>
+        <p>
+        Atomization and crushing.
+        </p>
 
-<p>
-Atomization and crushing methods for
-production of metal powders.
-</p>
+        <h3>Powder Processing</h3>
 
-<h3>Powder Processing</h3>
+        <ul>
+        <li>Blending</li>
+        <li>Compacting</li>
+        <li>Die Pressing</li>
+        <li>Isostatic Pressing</li>
+        <li>Sintering</li>
+        </ul>
 
-<ul>
-<li>Blending</li>
-<li>Compacting</li>
-<li>Die Pressing</li>
-<li>Isostatic Pressing</li>
-<li>Sintering</li>
-</ul>
+        <h3>Plastic Processing</h3>
 
-<h3>Plastic Processing</h3>
+        <p>
+        Types and characteristics of plastics
+        and moulding of thermoplastics.
+        </p>
+        `;
 
-<p>
-Types and characteristics of plastics
-and molding of thermoplastics.
-</p>
+    }
 
-<h3>Applications</h3>
 
-<p>
-Powder metallurgy and plastic processing
-are widely used for producing engineering
-components and industrial products.
-</p>
+    else if(topic === "cnc"){
 
-`,
+        content = `
+        <h2>MANUFACTURING AUTOMATION & CNC</h2>
 
+        <h3>CNC Machining</h3>
 
+        <p>
+        Computer Numerical Control machines
+        are used for accurate and repeatable
+        manufacturing operations.
+        </p>
 
-cnc:`
+        <h3>CNC Operations</h3>
 
-<h2>MANUFACTURING AUTOMATION & CNC</h2>
+        <ul>
+        <li>CNC Turning</li>
+        <li>CNC Milling</li>
+        <li>Drilling</li>
+        <li>Grinding</li>
+        </ul>
 
-<h3>CNC Machining</h3>
+        <h3>CAD / CAM</h3>
 
-<p>
-Computer Numerical Control (CNC) machines
-are used for accurate and repeatable
-manufacturing operations.
-</p>
+        <p>
+        CAD is used for computer-aided design
+        and CAM is used for computer-aided manufacturing.
+        </p>
 
-<h3>Common CNC Operations</h3>
+        <h3>Automation</h3>
 
-<ul>
-<li>CNC Turning</li>
-<li>CNC Milling</li>
-<li>Drilling</li>
-<li>Grinding</li>
-</ul>
+        <p>
+        Automation uses machines, control systems
+        and robotics to improve productivity,
+        consistency and efficiency.
+        </p>
+        `;
 
-<h3>CAD / CAM</h3>
+    }
 
-<p>
-CAD is used for computer-aided design,
-while CAM supports computer-aided
-manufacturing and CNC programming.
-</p>
 
-<h3>Automation</h3>
+    box.innerHTML = content + `
+        <button class="close-button" onclick="closeBox('technologyBox')">
+        Close
+        </button>
+    `;
 
-<p>
-Manufacturing automation uses machines,
-control systems and robotics to improve
-productivity, consistency and efficiency.
-</p>
+    box.classList.add("active");
 
-`
-
-};
-
-
-const display=document.getElementById("technology-display");
-
-display.innerHTML=technologies[topic];
-
-display.style.display="block";
-
-display.scrollIntoView({
-behavior:"smooth",
-block:"center"
-});
-
+    box.scrollIntoView({
+        behavior:"smooth",
+        block:"center"
+    });
 }
 
 
 /* ================= PROJECTS ================= */
 
-function showProject(project){
+function openProject(project){
 
-const projects={
+    var box = document.getElementById("projectBox");
 
-
-project1:`
-
-<h2>PROJECT 01</h2>
-
-<h3>Smart Manufacturing System</h3>
-
-<p>
-<strong>Project Area:</strong>
-Manufacturing
-</p>
-
-<p>
-<strong>Department:</strong>
-Mechanical Engineering
-</p>
-
-<p>
-<strong>Team:</strong>
-SIC Manufacturing Team
-</p>
-
-<p>
-<strong>Status:</strong>
-In Development
-</p>
-
-<h3>About the Project</h3>
-
-<p>
-This project focuses on developing a smart
-manufacturing concept that can improve
-manufacturing efficiency, productivity
-and process monitoring.
-</p>
-
-<h3>Objective</h3>
-
-<p>
-The main objective is to understand modern
-manufacturing methods and develop an
-innovative solution for real-world
-manufacturing applications.
-</p>
-
-<h3>Technologies Used</h3>
-
-<ul>
-<li>Manufacturing Processes</li>
-<li>CAD / CAM</li>
-<li>CNC Technology</li>
-<li>Automation</li>
-<li>Mechanical Design</li>
-</ul>
-
-`,
+    var content = "";
 
 
+    if(project === "p1"){
 
-project2:`
+        content = `
+        <h2>PROJECT 01</h2>
 
-<h2>PROJECT 02</h2>
+        <h3>Smart Manufacturing System</h3>
 
-<h3>Automated Material Handling System</h3>
+        <p>
+        <strong>Area:</strong> Smart Manufacturing
+        </p>
 
-<p>
-<strong>Project Area:</strong>
-Manufacturing Automation
-</p>
+        <p>
+        <strong>Status:</strong> In Development
+        </p>
 
-<p>
-<strong>Status:</strong>
-Coming Soon
-</p>
+        <h3>Objective</h3>
 
-<h3>About the Project</h3>
+        <p>
+        To develop an innovative manufacturing
+        concept that improves productivity,
+        process monitoring and manufacturing efficiency.
+        </p>
 
-<p>
-This project focuses on improving material
-move
+        <h3>Technologies</h3>
+
+        <ul>
+        <li>CAD / CAM</li>
+        <li>CNC</li>
+        <li>Automation</li>
+        <li>Manufacturing Processes</li>
+        </ul>
+        `;
+
+    }
+
+
+    else if(project === "p2"){
+
+        content = `
+        <h2>PROJECT 02</h2>
+
+        <h3>Automated Material Handling System</h3>
+
+        <p>
+        <strong>Area:</strong> Manufacturing Automation
+        </p>
+
+        <p>
+        <strong>Status:</strong> Coming Soon
+        </p>
+
+        <h3>Objective</h3>
+
+        <p>
+        To understand automation and develop
+        an efficient material handling concept
+        for manufacturing environments.
+        </p>
+        `;
+
+    }
+
+
+    else if(project === "p3"){
+
+        content = `
+        <h2>PROJECT 03</h2>
+
+        <h3>CNC Manufacturing Innovation</h3>
+
+        <p>
+        <strong>Area:</strong> CNC Machining
+        </p>
+
+        <p>
+        <strong>Status:</strong> Coming Soon
+        </p>
+
+        <h3>Objective</h3>
+
+        <p>
+        To understand CNC machining operations
+        and develop an innovative manufacturing solution.
+        </p>
+        `;
+
+    }
+
+
+    else if(project === "p4"){
+
+        content = `
+        <h2>PROJECT 04</h2>
+
+        <h3>3D Printing Prototype</h3>
+
+        <p>
+        <strong>Area:</strong> Additive Manufacturing
+        </p>
+
+        <p>
+        <strong>Status:</strong> Coming Soon
+        </p>
+
+        <h3>Objective</h3>
+
+        <p>
+        To design and develop a mechanical prototype
+        using 3D printing technology.
+        </p>
+        `;
+
+    }
+
+
+    else if(project === "p5"){
+
+        content = `
+        <h2>PROJECT 05</h2>
+
+        <h3>Casting Process Improvement</h3>
+
+        <p>
+        <strong>Area:</strong> Metal Casting
+        </p>
+
+        <p>
+        <strong>Status:</strong> Coming Soon
+        </p>
+
+        <h3>Objective</h3>
+
+        <p>
+        To study
